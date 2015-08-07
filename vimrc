@@ -1,76 +1,42 @@
-set nocompatible
-execute pathogen#infect()
-
-
-syntax on 					" Turn on syntax highlighting
-filetype plugin indent on			" Automatically detect file types
-
-map <F2> :NERDTreeToggle<CR>
-
-
-syntax enable
-"set background=light
-"let g:solarized_visibility="high"
-"let g:solarized_contrast="high"
-"colorscheme solarized
-
-"colorscheme Tomorrow-Night
-"colorscheme Tomorrow-Night-Bright
-"colorscheme Tomorrow-Night-Eighties
-"
-"set background=dark
-"colorscheme gruvbox
-
-"let g:rehash256 = 1
-"colorscheme molokai
-
-"let base16colorspace=256
-"colorscheme base16-ashes  
-
-"colorscheme jellybeans 
-
-"set background=dark
-"colorscheme lucius 
-"LuciusBlack
-
-"colorscheme badwolf
-"set t_Co=256
-"colorscheme mustang
-
-"let g:zenburn_high_Contrast=1
-"colorscheme zenburn
-
-colorscheme distinguished
-
-"let base16colorspace=256
-"let g:base16_shell_path='~/shelldata'
-"set background=dark
-"colorscheme base16-monokai
-
-"set regexpengine=1
-
-
-set number
-"set cursorline
-"set cursorcolumn
-
-"au FileType javascript call JavaScriptFold()
-
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-inoremap <esc> <nop>
-
-inoremap kj <esc>
-
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
-
-"set tabstop=2
-"set shiftwidth=2
-
-map <c-f> :call JsBeautify()<cr>
-autocmd FileType javascript vnoremap <buffer>  <c-f> :call RangeJsBeautify()<cr>
-
-let g:tern_map_keys=1
+  1 set nocompatible              " be iMproved, required
+  2 filetype off                  " required
+  3 
+  4 " set the runtime path to include Vundle and initialize
+  5 set rtp+=~/.vim/bundle/Vundle.vim
+  6 call vundle#begin()
+  7 
+  8 " let Vundle manage Vundle, required
+  9 Plugin 'gmarik/Vundle.vim'
+ 10 
+ 11 " Keep Plugin commands between vundle#begin/end.
+ 12 
+ 13 Plugin 'scrooloose/nerdtree'
+ 14 
+ 15 
+ 16 
+ 17 " All of your Plugins must be added before the following line
+ 18 call vundle#end()            " required
+ 19 
+ 20 filetype plugin indent on    " required
+ 21 
+ 22 set number " display line numbers
+ 23 syntax on " turn on syntax highlighting
+ 24 
+ 25 
+ 26 " disable arrow keys
+ 27 noremap <Up> <NOP>
+ 28 noremap <Down> <NOP>
+ 29 noremap <Left> <NOP>
+ 30 noremap <Right> <NOP>
+ 31 
+ 32 inoremap <Left> <NOP>
+ 33 inoremap <Right> <NOP>
+ 34 inoremap <Up> <NOP>
+ 35 inoremap <Down> <NOP>
+ 36 
+ 37 
+ 38 "NerdTree
+ 39 map <F2> :NERDTreeToggle<CR>
+ 40 
+ 41 "set background=light
+ 42 "set background=dark                         
