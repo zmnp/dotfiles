@@ -153,9 +153,9 @@ bar {
 	 status_command python ~/dotfiles/i3/conf.py	
 }
 
-exec --no-startup-id feh --bg-fill /home/yuriy/wallpapers/1.jpg &
-#exec compton -b &
+exec --no-startup-id feh --bg-fill ~/wallpapers/1.jpg &
 exec compton -CGb &
 
-bindcode $mod+Ctrl+52 exec --no-startup-id setxkbmap us #Mod + ctrl + z
-bindcode $mod+Ctrl+53 exec --no-startup-id setxkbmap ru -variant winkeys #Mod + ctrl + x
+#exec compton -b &
+#bindcode $mod+Ctrl+52 exec --no-startup-id setxkbmap us #Mod + ctrl + z
+#bindcode $mod+Ctrl+53 exec --no-startup-id setxkbmap ua -variant winkeys #Mod + ctrl + x
