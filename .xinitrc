@@ -15,7 +15,6 @@ fi
 
 #exec setxkbmap -layout us,ua  -option 'grp:alt_shift_toggle' &
 #exec xxkb &
-exec awesome
 #exec i3
 # exec gnome-session
 # exec startkde
